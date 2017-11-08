@@ -1,4 +1,4 @@
-# KastleWall
+# KastleWall.Encryption
 
 One way hash key generator: Create hask key for plain text. Good for using one way verification for user login.
 
