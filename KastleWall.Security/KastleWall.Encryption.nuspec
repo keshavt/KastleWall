@@ -1,0 +1,37 @@
+﻿<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>KastleWall.Encryption</id>
+    <title>KastleWall Encryption</title>
+    <version>2.0.0</version>
+    <authors>KastleWall</authors>
+    <owners>KastleWall</owners>
+    <language>En-US</language>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>Utility to create one way hash key using salt and Encryptor to encrypt/decrypt string</summary>
+    <description>
+      HashCreator: A simple hash provider utility to generate hash key for given string using salt.
+      System.Security.Cryptography.RNGCryptoServiceProvider for cryptographic number generation.
+      System.Security.Cryptography.Rfc2898DeriveBytes  to implement password-based key derivation functionality, PBKDF2, by using a pseudo-random number generator based on System.Security.Cryptography.HMACSHA1.
+
+      Encryptor:
+      Implements RijndaelManaged key generator and encryptor based on  System.Security.Cryptography.RijndaelManaged.
+
+      Lic: Provided as is, Author doesn't take responsibility for info security. It is up to package consumer to use it to generate hash for the string.
+    </description>
+    
+    <dependencies>
+     
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.Core" targetFramework="net46" />
+    </frameworkAssemblies>
+    <tags>
+      security,encryption,Rfc2898DeriveBytes, RNGCryptoServiceProvider,PBKDF2,HMACSHA1
+    </tags>
+  </metadata>
+  <files>
+    <file src="bin\debug\*.*" target="lib\net46" />
+  </files>
+
+</package>
